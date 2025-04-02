@@ -1,10 +1,13 @@
 export default function Title() {
   return (
     <div className="flex flex-col items-center justify-start h-auto mt-10 gap-6">
-      <h1 className="text-6xl font-bold text-blue-700 bg-blue-100 p-10 rounded-lg">
+      <h1 className="text-6xl font-bold text-gray-100 bg-[#0f3933] p-10 rounded-full shadow-lg">
         Your simple ToDo list
       </h1>
-      <a className="text-blue-900" href="https://github.com/jean-hy">
+      <a
+        className="text-[#edfffc] hover:text-[#97fce4] transition-colors duration-200"
+        href="https://github.com/jean-hy"
+      >
         Made by Jean Yikik :)
       </a>
     </div>

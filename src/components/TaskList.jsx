@@ -4,7 +4,7 @@ export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
   if (todos.length === 0) {
     return (
       <div className="text-center py-12">
-        <div className="text-gray-400 mb-4">
+        <div className="text-[#b0c5c1] mb-4">
           <svg
             className="w-16 h-16 mx-auto"
             fill="none"
@@ -19,7 +19,7 @@ export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
             />
           </svg>
         </div>
-        <p className="text-gray-500 text-lg">
+        <p className="text-[#b0c5c1] text-lg">
           No tasks yet. Add one to get started!
         </p>
       </div>
@@ -31,8 +31,8 @@ export default function TaskList({ todos, onChangeTodo, onDeleteTodo }) {
       {todos.map((todo) => (
         <li
           key={todo.id}
-          className="group bg-white/50 backdrop-blur-sm rounded-xl p-4 border border-indigo-100 
-                     hover:border-indigo-200 hover:shadow-md transition-all duration-200"
+          className="group bg-[#edfffc]/50 backdrop-blur-sm rounded-xl p-4 border border-[#97fce4] 
+                     hover:border-[#0f3933] hover:shadow-md transition-all duration-200"
         >
           <Task todo={todo} onChange={onChangeTodo} onDelete={onDeleteTodo} />
         </li>
@@ -75,8 +75,8 @@ function Task({ todo, onChange, onDelete }) {
             done: e.target.checked,
           });
         }}
-        className="w-5 h-5 rounded-full border-2 border-indigo-300 text-indigo-600 
-                   focus:ring-indigo-200 focus:ring-offset-2 transition-colors duration-200"
+        className="w-5 h-5 rounded-full border-2 border-[#97fce4] text-[#0f3933] 
+                   focus:ring-[#97fce4] focus:ring-offset-2 transition-colors duration-200"
       />
 
       {isEditing ? (
@@ -85,13 +85,13 @@ function Task({ todo, onChange, onDelete }) {
             value={editValue}
             onChange={(e) => setEditValue(e.target.value)}
             onKeyDown={handleKeyDown}
-            className="flex-1 px-4 py-2 bg-white/80 border-2 border-indigo-200 rounded-lg 
-                       focus:outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-200"
+            className="flex-1 px-4 py-2 bg-[#edfffc]/80 border-2 border-[#97fce4] rounded-lg 
+                       focus:outline-none focus:border-[#0f3933] focus:ring-2 focus:ring-[#97fce4]/30"
             autoFocus
           />
           <button
             onClick={handleSave}
-            className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-lg 
+            className="px-4 py-2 bg-[#0f3933] hover:bg-[#02231e] text-[#edfffc] rounded-lg 
                        shadow-sm hover:shadow-md transition-all duration-200"
           >
             Save
@@ -101,7 +101,7 @@ function Task({ todo, onChange, onDelete }) {
               setIsEditing(false);
               setEditValue(todo.title);
             }}
-            className="px-4 py-2 bg-gray-500 hover:bg-gray-600 text-white rounded-lg 
+            className="px-4 py-2 bg-[#b0c5c1] hover:bg-[#97fce4] text-[#02231e] rounded-lg 
                        shadow-sm hover:shadow-md transition-all duration-200"
           >
             Cancel
@@ -111,7 +111,7 @@ function Task({ todo, onChange, onDelete }) {
         <div className="flex-1 flex items-center justify-between">
           <span
             className={`text-lg ${
-              todo.done ? "line-through text-gray-400" : "text-gray-700"
+              todo.done ? "line-through text-[#b0c5c1]" : "text-[#0f3933]"
             }`}
           >
             {todo.title}
@@ -119,7 +119,7 @@ function Task({ todo, onChange, onDelete }) {
           <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
             <button
               onClick={() => setIsEditing(true)}
-              className="p-2 text-indigo-600 hover:text-indigo-700 hover:bg-indigo-50 
+              className="p-2 text-[#0f3933] hover:text-[#02231e] hover:bg-[#97fce4]/20 
                          rounded-lg transition-colors duration-200"
             >
               <svg
@@ -138,7 +138,7 @@ function Task({ todo, onChange, onDelete }) {
             </button>
             <button
               onClick={() => onDelete(todo.id)}
-              className="p-2 text-red-600 hover:text-red-700 hover:bg-red-50 
+              className="p-2 text-[#0f3933] hover:text-[#02231e] hover:bg-[#97fce4]/20 
                          rounded-lg transition-colors duration-200"
             >
               <svg

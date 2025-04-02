@@ -15,18 +15,18 @@ export default function AddToDo({ onAddTodo }) {
     <form onSubmit={handleSubmit} className="relative">
       <div className="relative">
         <input
-          className="w-full px-6 py-4 text-lg bg-white/50 backdrop-blur-sm border-2 border-indigo-100 rounded-xl 
-                     focus:outline-none focus:border-indigo-400 focus:ring-2 focus:ring-indigo-200 
-                     placeholder-gray-400 transition-all duration-200"
+          className="w-full px-6 py-4 text-lg bg-[#edfffc]/50 backdrop-blur-sm border-2 border-[#97fce4] rounded-xl 
+                     focus:outline-none focus:border-[#0f3933] focus:ring-2 focus:ring-[#97fce4]/30 
+                     placeholder-[#b0c5c1] transition-all duration-200"
           placeholder="Add a new task..."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
         <button
           type="submit"
-          className="absolute right-3 top-1/2 -translate-y-1/2 bg-gradient-to-r from-indigo-500 to-purple-500 
-                     text-white px-6 py-2 rounded-lg font-medium shadow-lg shadow-indigo-200 
-                     hover:shadow-xl hover:shadow-indigo-300 hover:scale-105 
+          className="absolute right-3 top-1/2 -translate-y-1/2 bg-[#0f3933] hover:bg-[#02231e]
+                     text-[#edfffc] px-6 py-2 rounded-lg font-medium shadow-lg shadow-[#0f3933]/20 
+                     hover:shadow-xl hover:shadow-[#0f3933]/30 hover:scale-105 
                      transition-all duration-200 flex items-center gap-2"
         >
           <span>Add Task</span>
