@@ -23,13 +23,13 @@ A sleek and modern Todo List application built with React, Vite, and Tailwind CS
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/todo-list-app.git
+git clone https://github.com/jean-hy/my-todo.git
 ```
 
 2. Navigate to the project directory:
 
 ```bash
-cd todo-list-app
+cd my-todo
 ```
 
 3. Install dependencies:
