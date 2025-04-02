@@ -53,7 +53,7 @@ export default function App() {
           <Title />
 
           <h1 className="text-3xl font-bold text-[#edfffc] mt-4">
-            What do you want to do today?
+            What do you want to accomplish today?
           </h1>
           <p className="text-gray-200 mt-2 text-lg">Today is {formattedDate}</p>
         </div>

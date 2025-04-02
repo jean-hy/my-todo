@@ -2,17 +2,7 @@
 
 A sleek and modern Todo List application built with React, Vite, and Tailwind CSS. This application features a beautiful glassmorphic design, smooth animations, and an intuitive user interface.
 
-## Features
-
-- ✨ Modern glassmorphic UI design
-- 🎨 Beautiful gradient backgrounds
-- ⚡ Fast and responsive performance
-- 🔄 Real-time task updates
-- ✏️ Edit and delete tasks
-- ✅ Mark tasks as complete
-- 🎯 Empty state handling
-- ⌨️ Keyboard shortcuts support
-- 📱 Fully responsive design
+![Todo List App Screenshot](./src/assets/sample.png)
 
 ## Tech Stack
 
